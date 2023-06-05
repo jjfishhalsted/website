@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-responsive.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rum+Raisin&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <title>JJFish and Chicken</title>
+</head>
+
+<body>
+  <header class="container">
+    <div id="menu-mobile">
+      <div id="logo">
+        <a href="#"><img src="assets/img/logo.png" alt="Logo Rapa do Tacho" /></a>
+      </div>
+      <div id="btn-menu-mobile" onclick="mobile.openMenuMobile()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="item-menu" href="#">Home</a></li>
+        <li><a class="item-menu" href="#cardapio">Menu</a></li>
+        <div class="d-none" id="logo">
+          <a href="#"><img src="assets/img/logo.png" alt="Logo Rapa do Tacho" /></a>
+        </div>
+        <li><a class="item-menu" href="#galeria">Gallery</a></li>
+        <li><a class="item-menu" href="#contato">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="slider">
+      <div class="banner" class="container">
+        <div id="left-banner" class="flex-center-full">
+          <!-- adicionar um display flex, e direction em column -->
+          <div id="img-titulo-banner">
+            <h1>
+              <img src="assets/img/bestsell.png" alt="Experimente nossa feijoada" />
+            </h1>
+          </div>
+          <div id="description-banner" class="text-center">
+            <p>Wings Dinner</p>
+            <p>Served with 6 Wings, Crispy Fries, Homemade Coleslaw and side of toast</p>
+            <a target="_blank"
+              href="#"><button>View Menu</i></button></a>
+          </div>
+        </div>
+        <div class="d-none" id="right-banner">
+          <img src="assets/img/6wing.png" alt="Feijoada" />
+        </div>
+      </div>
+      <div class="banner" class="container">
+        <div id="left-banner" class="flex-center-full">
+          <!-- adicionar um display flex, e direction em column -->
+          <div class="titulo-banner">
+            <h1 >
+              Catfish Fillet
+            </h1>
+          </div>
+          <div id="description-banner" class="text-center">
+            <p>As the name says!</p>
+            <p>Served with Crispy Fries, Homemade Coleslaw and side of toast</p>
+            <a target="_blank"
+              href="#"><button>View Menu</i></button></a>
+          </div>
+        </div>
+        <div class="d-none" id="right-banner">
+          <img src="assets/img/catfish-removebg-preview.png" alt="Virado à Paulista" />
+        </div>
+      </div>
+    </div>
+    <div class="controls-slide text-center">
+
+        <i id="slide-1" onclick="actions.backSlide()" class="fas fa-chevron-circle-left"></i>
+        <i id="slide-2" onclick="actions.nextSlide()" class="fas fa-chevron-circle-right"></i>
+
+    </div>
+    <div id="box-arrow-down" class="text-center">
+      <a href="#contato"><i class="fas fa-arrow-down"></i></a>
+    </div>
+
+
+    <section id="galeria">
+      <div id="box-galeria" class="container">
+        <div id="container-fotos">
+          <h2>Gallery</h2>
+          <div id="box-fotos">
+            <img class="img-fluid small-img" src="./assets/Fotos/catfish-removebg-preview (1).png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/wings_catfish_nuggets-removebg-preview.png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/chicken_tenders-removebg-preview.png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/gizzards_tenders-removebg-preview.png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/PLATTER-removebg-preview.png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/SOLE_FISH_FILLET-removebg-preview.png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/wings_catfish_nuggets-removebg-preview.png" alt="foto1">
+            <img class="img-fluid small-img" src="./assets/Fotos/6wing.png" alt="foto1">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal flex-center-full">
+        <!-- .flex-center-full -->
+
+        <div class="modal-content flex-center-full">
+          <!-- .flex-center-full -->
+          <img id="modal-img" src="/assets/Fotos/Captura de tela 2021-02-18 130347.jpg"
+            alt="Foto restaurante rapa do tacho">
+        </div>
+        <span class="flex-center-full" id="btn-close">&times;</span>
+
+      </div>
+
+      <div id="box-equipe" class="container">
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="contato" class="container">
+      <h2>Contact</h2>
+      <div id="localization" class="box-info-contato">
+        <!-- flex direction row wrap; width 40 vw-->
+        <i class="fas fa-map-marker-alt"></i>
+        <div id="address">
+          <p>10902 S Halsted St, Chicago, IL 60628</p>
+        </div>
+
+      </div>
+      <div id="phone" class="box-info-contato">
+        <!-- flex direction row wrap; width 40 vw-->
+        <i class="fas fa-phone-alt"></i>
+        <p>(773) 264-4910
+        </p>
+      </div>
+
+      <div id="box-whats-delivery" class="box-info-contato text-align">
+        <div>
+          <p>Delivery via GrubHub
+          </p>
+          <a target="_blank"
+            href="https://www.grubhub.com/restaurant/j-j-fish--chicken-10902-s-halsted-st-chicago/2468417"
+            id="whats" onmouseover="actions.hoverImgDelivery()" onmouseout="actions.removeHover()">
+            <h4>Click Here</h4></i>
+          </a>
+        </div>
+        <img class="d-none img-fluid" src="./assets/img/delivery.png" alt="ícone moto delivery">
+      </div>
+
+
+
+      <div id="box-whats-delivery" class="box-info-contato text-align">
+        <div>
+          <p>Delivery via UberEats
+          </p>
+          <a target="_blank"
+            href="https://www.ubereats.com/store/jj-fish-%26-chicken-halsted-%26-109th-st/PJ5SsGuFSgKCLUINC-q6KQ"
+            >
+            <h4>Click Here</h4></i>
+          </a>
+        </div>
+        <img class="d-none img-fluid" src="./assets/img/delivery.png" alt="ícone moto delivery">
+      </div>
+
+
+      <div id="direitos" class="text-center">
+        <span>© jjfish chicken 10902 s halsted st chicago</span>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/dishes.js"></script>
+</body>
+
+</html>
